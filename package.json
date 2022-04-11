@@ -9,6 +9,9 @@
 		"build": "npx esbuild src/index.ts src/server.ts --outdir=dist",
 		"dev": "npm run build -- --watch"
 	},
+	"files": [
+		"dist"
+	],
 	"exports": {
 		".": "./dist/index.js",
 		"./server": "./dist/server.js"
