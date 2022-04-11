@@ -2,7 +2,7 @@
 
 ## Astro SSR AWS Lambda Adapter
 
-> ⚠️ Still really early days on this one. Request `body` still unsupported and barely tested.
+> ⚠️ Still really early days on this one. Request `body` still unsupported. No deploys with complex Astro apps. Generally untested. Feedback and PRs welcome.
 
 ```sh
 npm i astro-lambda-adapter
@@ -12,8 +12,6 @@ npm i astro-lambda-adapter
 // ./astro.config.js
 import { defineConfig } from 'astro/config';
 import awsAdapter from 'astro-lambda-adapter';
-
-console.log(awsAdapter);
 
 export default defineConfig({
 	adapter: awsAdapter(),
