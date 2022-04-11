@@ -1,5 +1,9 @@
 # `astro-lambda-adapter`
 
+The primary objective here is to map a `APIGatewayProxyEventV2` received in a Lambda to an Astro/Node.js `Request` and then Astro's `Response` to `APIGatewayProxyResult`.
+
+See [./src/server.ts](./src/server.ts).
+
 ## Astro SSR AWS Lambda Adapter
 
 > ⚠️ Still really early days on this one. Request `body` still unsupported. No deploys with complex Astro apps. Generally untested. Feedback and PRs welcome.
@@ -43,5 +47,6 @@ const RANDOM = Math.floor(Math.random() * 100) + 1;
 		<p>Random: <code>{RANDOM}</code></p>
 	</body>
 </html>
-
 ```
+
+> 📜 This integration doesn't modify how Astro uses Vite to build and bundle your app. You may find it beneficial to [configure Vite via Astro](https://docs.astro.build/en/reference/configuration-reference/#vite) to optimize the build for Lambda.

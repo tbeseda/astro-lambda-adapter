@@ -17,11 +17,6 @@ export default function createIntegration(): AstroIntegration {
 			'astro:config:done': ({ setAdapter }) => {
 				setAdapter(getAdapter());
 			},
-			'astro:build:setup': ({ vite, target }) => {
-				if (target === 'server') {
-					vite.ssr = { noExternal: true };
-				}
-			},
 		},
 	};
 }
