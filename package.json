@@ -1,7 +1,7 @@
 {
 	"name": "astro-lambda-adapter",
 	"description": "Astro AWS Lambda Adapter",
-	"version": "0.1.0-beta.1",
+	"version": "0.1.0",
 	"author": "tbeseda",
 	"license": "MIT",
 	"homepage": "https://github.com/tbeseda/astro-lambda-adapter",
