@@ -10,7 +10,7 @@
 		"dev": "npm run build -- --watch"
 	},
 	"files": [
-		"dist"
+		"dist/**/*"
 	],
 	"exports": {
 		".": "./dist/index.js",
