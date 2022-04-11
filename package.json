@@ -1,7 +1,7 @@
 {
 	"name": "astro-lambda-adapter",
 	"description": "Astro AWS Lambda Adapter",
-	"version": "0.0.1-beta.3",
+	"version": "0.0.1-beta.4",
 	"author": "tbeseda",
 	"license": "MIT",
 	"type": "module",
@@ -10,7 +10,7 @@
 		"dev": "npm run build -- --watch"
 	},
 	"files": [
-		"./dist/**/*"
+		"dist/**/*"
 	],
 	"main": "./dist/index.js",
 	"exports": {
